@@ -96,7 +96,7 @@ let g:AutoPairsClosedPairs = {}
 
 
 function! AutoPairsInsert(key)
-  if (&filetype == 'lisp' || &filetype == 'clojure') && (a:key == "'" || a:key == '`' )
+  if (&filetype == 'lisp' || &filetype == 'clojure' || &filetype == 'scheme') && (a:key == "'" || a:key == '`' )
     return a:key
   end
 
